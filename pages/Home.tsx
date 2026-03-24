@@ -111,8 +111,11 @@ const Home = ({ onNavigate }: HomeProps) => {
         {/* Navy overlay — darkens video to match site's moody palette */}
         <div className="absolute inset-0 bg-brand-navy/55 pointer-events-none" />
 
-        {/* Top fade — dissolves from paper (white hero above) into the video */}
-        <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-paper to-transparent pointer-events-none" />
+        {/* Top fade — multi-stop ease-out curve for a perceptually smooth
+             transition from the white hero above into the darkened video.
+             h-2/3 gives ~40vh of fade room; four stops mimic an ease-out curve
+             so the eye never perceives a hard colour band. */}
+        <div className="absolute inset-x-0 top-0 h-2/3 bg-gradient-to-b from-paper via-paper/75 via-paper/30 to-transparent pointer-events-none" />
 
         {/* Bottom fade — pre-blends into the oxford section directly below */}
         <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-oxford to-transparent pointer-events-none" />
