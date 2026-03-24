@@ -128,22 +128,15 @@ export const sitemapSections: SitemapSection[] = [
       // ── REAL ESTATE COURSES ────────────────────────────────────
       {
         queryParam: 'courses',
-        label: 'RE Principles',
-        description: 'DRE-approved foundational course required for all salespersons.',
-        priority: 0.7,
-        changefreq: 'monthly',
-      },
-      {
-        queryParam: 'courses',
-        label: 'RE Practice',
-        description: 'Real-world scenarios and strategies for passing the DRE exam.',
-        priority: 0.7,
+        label: 'Sales Agent Package',
+        description: 'DRE-approved bundle: 2 required courses (RE Principles & Practice), 1 elective, and practice exams. $399.',
+        priority: 0.8,
         changefreq: 'monthly',
       },
       {
         queryParam: 'courses',
         label: 'Broker Package',
-        description: 'Complete broker upgrade bundle with all required coursework.',
+        description: 'Complete 8-course requirement for CA Broker license. Includes all statutory courses. $649.',
         priority: 0.7,
         changefreq: 'monthly',
       },
