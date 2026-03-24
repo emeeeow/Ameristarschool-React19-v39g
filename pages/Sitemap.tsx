@@ -75,7 +75,7 @@ const Sitemap = ({ onNavigate }: SitemapProps) => {
   });
 
   return (
-    <div className="min-h-screen bg-paper">
+    <div className="min-h-screen">
 
       {/* ── Page Hero ─────────────────────────────────────────── */}
       <section className="pt-40 pb-16 px-6 md:px-12 bg-oxford text-white">

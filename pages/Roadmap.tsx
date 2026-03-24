@@ -310,7 +310,7 @@ interface RoadmapProps {
 
 const Roadmap = ({ onNavigate, expandedNodes, onExpandedChange }: RoadmapProps) => {
   return (
-    <div className="w-full pt-24 pb-24 min-h-screen bg-paper relative">
+    <div className="w-full pt-24 pb-24 min-h-screen relative">
       <SEO
         title="Licensing Roadmap"
         description="Interactive guide to California Real Estate and Insurance licensing requirements. Explore the steps from education to examination."
