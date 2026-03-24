@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Base SEO Defaults (Will be overwritten by React per page) -->
+    <title>Ameristar School | CA Real Estate & Insurance Licensing</title>
+    <meta name="description" content="Premier CA licensing school for Real Estate (DRE) and Insurance (DOI). Pre-licensing exams, continuing education, and broker certification." />
+    <meta name="keywords" content="CA licensing, CA real estate, CA DRE, CA DOI, CA insurance exams" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ameristar School" />
+    <meta property="og:title" content="Ameristar School | CA Real Estate & Insurance Licensing" />
+    <meta property="og:description" content="Premier CA licensing school for Real Estate (DRE) and Insurance (DOI). Pre-licensing exams, continuing education, and broker certification." />
+    <meta property="og:image" content="https://ameristarschool.com/hero1-highrise.jpg" />
+
+    <!-- Structured Data (JSON-LD) for Google Organization Recognition -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Ameristar School",
+      "description": "A high-end educational resource platform for aspiring insurance and real estate professionals in California.",
+      "areaServed": "California",
+      "url": "https://ameristarschool.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+
+    <!-- ── Google Analytics 4 (Measurement ID: G-P3HK24ZZ2M) ──────────────
+         Tracks page views, user sessions, and navigation across the site.
+         SPA page_view events are fired from App.tsx on each route change.
+    ──────────────────────────────────────────────────────────────────────── -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P3HK24ZZ2M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P3HK24ZZ2M');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-paper text-obsidian">
+    <div id="root"></div>
+  <!-- IMPORTANT: React is bundled by Vite. Do not add React CDN scripts here. -->
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

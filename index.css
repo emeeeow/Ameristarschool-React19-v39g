@@ -1,0 +1,47 @@
+/*
+ * index.css
+ * Tailwind v4 is loaded through the official Vite plugin.
+ * We keep the existing JavaScript config file alive with @config so custom
+ * colors, fonts, spacing, and animations continue to work without a redesign.
+ */
+@import "tailwindcss";
+@config "./tailwind.config.js";
+
+/* ── Global base styles ─────────────────────────────────────────────────────
+   Moved here from the inline <style> block in index.html.
+   Tailwind's base layer resets these if not explicitly set, so we add them
+   back as globals here.
+*/
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar — WebKit only */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
+
+@layer base {
+  /* Preserve v3-ish placeholder styling for the enrollment/contact forms. */
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-gray-400);
+  }
+
+  /* Keep buttons feeling clickable after v4 Preflight changes. */
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}

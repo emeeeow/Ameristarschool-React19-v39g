@@ -1,0 +1,19 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24.14.0"
+
+[functions]
+  directory = "netlify/functions"
+
+# ── SPA Catch-all Redirect ─────────────────────────────────────────────────────
+# Netlify serves files from /dist directly. Any path that doesn't match a real
+# file (e.g. /bogus-url) would return Netlify's default 404 without this rule.
+# status = 200 means "serve index.html but keep the original URL in the browser"
+# — React's getPageFromUrl() then reads the URL and renders the custom NotFound page.
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
